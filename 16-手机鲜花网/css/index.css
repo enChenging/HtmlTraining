@@ -1,0 +1,241 @@
+div, p, dl, dd, h1, h2, h3, h4, h5, h6, a, b, u, em, input, textarea, button, select, form, label, span, td, li, nav, footer, body, ul, i{
+  padding: 0px;
+  margin: 0px;
+  border:0
+}
+
+body{
+   background-color: #F7F7F7;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+/*头部*/
+#top{
+    background-color: #C10000;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    text-align: center;
+}
+/*头部左边的图标*/
+#top .top-left{
+  float: left;
+  height: 39px;
+  width: 39px;
+}
+/*头部中间的文字*/
+#top h2{
+   display: inline-block;
+   font-size:20px;
+}
+/*头部右边的图标*/
+#top .top-right{
+  float: right;
+  height: 39px;
+  width: 39px;
+}
+
+/*轮播图*/
+
+/*轮播图下面的小圆点*/
+.focus span{
+    width:10px;
+    height:10px;
+    margin-right:10px;
+    border-radius:50%;
+    background:#666;
+}
+/*当前状态的小圆点为白色*/
+.focus span.current{
+    background:#fff;
+}
+
+/*商品分类*/
+.grid {
+    margin: 10px 10px 0;
+}
+
+.grid li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.clearfix:after, .hot_list li:after{
+    content: '';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    clear: both;
+}
+
+/*设置圆角*/
+/*nth-child(n)是找到第几个子元素*/
+.grid li:nth-child(1) a {
+    border-top-left-radius: 5px;
+}
+
+.grid li:nth-child(4) a {
+    border-top-right-radius: 5px;
+}
+
+.grid li:nth-child(5) a {
+    border-bottom-left-radius: 5px;
+}
+
+.grid li:nth-child(8) a {
+    border-bottom-right-radius: 5px;
+}
+
+.grid li a {
+    display: block;
+    border: 1px solid;
+    border-color: #E4E7ED #E4E7ED #fff #fff;
+    color: #666;
+    font-size: 13px;
+    padding: 10px 0;
+}
+/*图标*/
+.grid li a:before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background:#178A50 url(../image/grid.png) center 3px no-repeat;
+    background-size: 30px;
+    border-radius: 50%;
+    margin: 0 auto 5px;
+}
+/*通过定位来确定图标的位置－background-position*/
+.grid li a.ico_2:before {
+    background-color: #C69886;
+    background-position: 0 -42px;
+}
+
+.grid li a.ico_3:before {
+    background-color: #008BCE;
+    background-position: 0 -85px;
+}
+
+.grid li a.ico_4:before {
+    background-color: #C10000;
+    background-position: 0 -130px;
+}
+
+.grid li a.ico_5:before {
+    background-color: #531408;
+    background-position: 0 -176px;
+}
+
+.grid li a.ico_6:before {
+    background-color: #faab02;
+    background-position: 0 -217px;
+}
+
+.grid li a.ico_7:before {
+    background-color: #68B227;
+    background-position: 0 -259px;
+}
+
+.grid li a.ico_8:before {
+    background-color: #FB7252;
+    background-position: 0 -308px;
+}
+
+/*鲜花列表*/
+.hot_list {
+    margin: 0 10px 10px;
+}
+
+.hot_list li {
+    background: #fff;
+    margin-top: 10px;
+    height: 60px;
+    position: relative;
+}
+/*右边的箭头*/
+.hot_list li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 23px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*设置列表前面1，2，3的背景色*/
+.hot_list li:nth-child(1) em {
+    background: #E00202;
+}
+
+.hot_list li:nth-child(2) em {
+    background: #FF4A00;
+}
+.hot_list li em {
+    float: left;
+    width: 30px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    background-color: #FF7300;
+}
+/*鲜花图片*/
+.hot_list li img {
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+
+.hot_list li .text {
+    margin-left: 130px;
+    font-size: 12px;
+}
+/*右边的价格*/
+.hot_list li .text .price {
+    float: right;
+    color: #C10000;
+    font-size: 15px;
+    margin: 22px 25px 0 0;
+}
+
+.hot_list li .text .gray {
+    display: block;
+    padding:15px 0  5px 0;
+}
+
+.gray {
+    color: #b1b1b1;
+}
+
+.red {
+    color: #C10000;
+}
+
+.hot_list li .text del {
+    margin-left: 5px;
+    color: #B1B1B1;
+}
+
+/*底部*/
+.footer{
+    text-align:center;
+    color:#999;
+    font-size:13px;
+}
+
+
+

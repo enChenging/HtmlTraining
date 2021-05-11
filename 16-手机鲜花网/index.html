@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>大神二期鲜花网</title>
+    <link href="css/index.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/yxMobileSlider.js"></script>
+</head>
+<body>
+<!--头部-->
+  <div id="top">
+      <img class="top-left" src="image/topLeft.png">
+      <h2>大神二期鲜花网</h2>
+      <img class="top-right" src="image/topRight.png">
+  </div>
+  <!--轮播图-->
+  <div class="slider">
+      <ul>
+          <li><a href="javascript:void(0);"><img src="image/scroll01.jpg"></a></li>
+          <li><a href="javascript:void(0);"><img src="image/scroll02.jpg"></a></li>
+          <li><a href="javascript:void(0);"><img src="image/scroll03.jpg"></a></li>
+          <li><a href="javascript:void(0);"><img src="image/scroll04.jpg"></a></li>
+          <li><a href="javascript:void(0);"><img src="image/scroll05.jpg"></a></li>
+      </ul>
+  </div>
+  <!--商品分类-->
+  <div class="grid">
+      <ul class="clearfix">
+          <li><a href="javascript:void(0);" class="ico_1">鲜花</a></li>
+          <li><a href="javascript:void(0);" class="ico_2">蛋糕</a></li>
+          <li><a href="javascript:void(0);" class="ico_3">礼篮</a></li>
+          <li><a href="javascript:void(0);" class="ico_4">会员中心</a></li>
+          <li><a href="javascript:void(0);" class="ico_5">巧克力</a></li>
+          <li><a href="javascript:void(0);" class="ico_6">卡通花束</a></li>
+          <li><a href="javascript:void(0);" class="ico_7">开业花篮</a></li>
+          <li><a href="javascript:void(0);" class="ico_8">订单查询</a></li>
+      </ul>
+  </div>
+<!--鲜花列表-->
+  <div class="hot_list">
+      <ul>
+          <li class="_loaded">
+              <em>1</em>
+              <img src="image/flower.jpg">
+              <div class="text">
+                  <span class="price">178</span>
+                  <span class="gray">103800人已经购买</span>
+                  <span class="red">7.6折</span>
+                  <del>299元</del>
+              </div>
+          </li>
+          <li class="_loaded">
+              <em>2</em>
+              <img src="image/flower2.jpg">
+              <div class="text">
+                  <span class="price">269</span>
+                  <span class="gray">93000人已经购买</span>
+                  <span class="red">8.3折</span>
+                  <del>399元</del>
+              </div>
+          </li>
+          <li class="_loaded">
+              <em>3</em>
+              <img src="image/flower3.jpg">
+              <div class="text">
+                  <span class="price">151</span>
+                  <span class="gray">87251人已经购买</span>
+                  <span class="red">8.3折</span>
+                  <del>199元</del>
+              </div>
+          </li>
+      </ul>
+  </div>
+<!--底部-->
+  <div class="footer">小码哥</div>
+<!--调用轮播图js-->
+<script>
+    $(".slider").yxMobileSlider({width:400,height:160,during:3000});
+</script>
+</body>
+</html>
