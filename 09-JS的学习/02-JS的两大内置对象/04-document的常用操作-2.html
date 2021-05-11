@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>document的常用操作-2</title>
+</head>
+<body>
+   <img class="icon" src="image/img_01.jpg">
+   <p id="word">这里风景很美</p>
+   <p></p>
+   <button>隐藏</button>
+
+
+   <script>
+       // 1.1 拿到所有要操作的标签
+       var icon = document.getElementsByClassName('icon')[0];
+       var p = document.getElementById('word');
+       var btn = document.getElementsByTagName('button')[0];
+
+//       console.log(btn);
+
+       // 1.2 监听按钮的点击
+       btn.onclick = function () {
+           // 隐藏 css属性 style display
+         if (btn.innerText == '隐藏'){
+             p.style.display = 'none';
+             icon.style.display = 'none';
+             btn.innerText = '显示';
+         }else{
+             p.style.display = 'block';
+             icon.style.display = 'inline-block';
+             btn.innerText = '隐藏';
+         }
+
+       }
+
+   </script>
+</body>
+</html>

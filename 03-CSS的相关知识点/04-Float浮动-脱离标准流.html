@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Float浮动-脱离标准流</title>
+    <!--
+      注意:
+      任何标签只要一浮动,类型就会被转为行内-块级标签
+    -->
+    <style>
+        #main{
+            background-color: red;
+            width: 500px;
+            height: 200px;
+        }
+
+        .test1{
+            background-color: blue;
+            /*浮动*/
+            float: left;
+            width: 30px;
+            height: 60px;
+        }
+
+        .test2{
+            background-color: yellow;
+            float: right;
+        }
+
+        .test3{
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+   <div id="main">
+       <div class="test1">1</div>
+       <div class="test2">2</div>
+       <div class="test3">3</div>
+   </div>
+</body>
+</html>

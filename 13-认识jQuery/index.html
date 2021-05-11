@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>认识jQuery</title>
+    <!--
+       JS存在的痛点:
+       1. 复杂的DOM操作
+       2. 浏览器兼容问题
+       3. 事件\动画比较复杂
+
+       jQuery的亮点:
+       1. 轻松实现DOM操作
+       2. 轻松解决浏览器兼容问题
+       3. 轻松实现动画和事件
+
+    -->
+</head>
+<body>
+   <div id="main">
+       <p class="word">我是IT</p>
+       <p class="word">我是IT</p>
+       <p class="word">我是IT</p>
+       <p class="word">我是IT</p>
+       <p class="word">我是IT</p>
+       <div class="test1">
+           <img src="image/img_01.jpg">
+           <img src="image/img_01.jpg">
+           <img src="image/img_01.jpg">
+           <img src="image/img_01.jpg">
+           <img src="image/img_01.jpg">
+           <img src="image/img_01.jpg">
+       </div>
+   </div>
+
+   <button>显示</button>
+   <button>隐藏</button>
+   <button>切换</button>
+
+  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript">
+      // 拿到img标签   $()----> jQuery对象
+//       alert($('img'));
+      // 查看img中的属性 --->attr
+      console.log($('img').attr('src'));
+      // 查看p标签中的属性
+      console.log($('p').attr('class'));
+      // 改变图片
+      $('img').attr('src', 'image/img_02.jpg');
+
+      // css中的所有选择器都适用于jQuery
+      // 查看p标签中的文字
+      console.log($('.word').text());
+      $('.word').text('我是段落!!!!');
+      // 修改img标签中的内容
+      $('.test1>img').attr('src', 'image/img_04.jpg');
+
+
+      // 常用的事件
+      $('button').eq(0).on('click', function(){
+         $('p').show();
+         $('img').show();
+      });
+
+      $('button').eq(1).on('click', function(){
+         $('p').hide();
+         $('img').hide();
+      });
+
+      $('button').eq(2).on('click', function(){
+         $('p').toggle(2000);
+         $('img').toggle(2000);
+      });
+
+
+      // 遍历
+      var names = [10, 100, -100, 200];
+      $.each(names, function(index, value){
+          console.log(index, value);
+      });
+
+      // 根据内容获取索引
+      var index = $.inArray(-100, names);
+      console.log(index);
+
+      // css写法
+      $('#main>p').css({
+         'border' : '1px solid red',
+         'text-shadow': '1px 1px 2px purple'
+      });
+
+
+  </script>
+</body>
+</html>

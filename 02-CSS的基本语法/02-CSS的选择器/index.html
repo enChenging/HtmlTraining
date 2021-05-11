@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS的常见选择器</title>
+    <style>
+        /* 标签选择器 */
+        div{
+            color: red;
+        }
+
+        p{
+            color: blue;
+        }
+
+        /* 类选择器 */
+        .test1{
+           color: green;
+        }
+
+        /*id选择器*/
+        #main{
+            font-size: 40px;
+        }
+
+        /*并列选择器*/
+        #main, .test1{
+           border: 1px solid rosybrown;
+        }
+
+        /*复合选择器*/
+        p.test1{
+            background-color: yellow;
+        }
+
+        /*后代选择器*/
+        div a{
+            color: red;
+        }
+
+        /*直接后代选择器*/
+        div.test1>a{
+           color: green;
+        }
+
+        /*伪类*/
+        input:focus{
+            /*去除外线条*/
+            outline: none;
+            /*改变宽度和高度*/
+            width: 500px;
+            height: 50px;
+            /*改变文字的大小*/
+            font-size: 20px;
+        }
+
+        /*当鼠标移动上来*/
+        #main:hover{
+            width: 300px;
+            height: 200px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">我是div标签</div>
+    <!--<div id="main">我是div标签</div>-->
+    <div>我是div标签</div>
+    <p>我是段落标签</p>
+    <p>我是段落标签</p>
+    <p>我是段落标签</p>
+    <p>我是段落标签</p>
+    <p class="test1">我是段落标签</p>
+    <div class="test1">
+        我是div标签
+        <a href="#">我是超链接</a>
+        <div>
+            <a href="#">我是二级链接</a>
+        </div>
+    </div>
+    <br><br><br><br>
+    <input placeholder="我是输入框">
+</body>
+</html>

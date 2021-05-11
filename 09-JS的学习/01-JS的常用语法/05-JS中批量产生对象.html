@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS中批量产生对象</title>
+    <script>
+        // 普通函数 -> 构造函数
+        var Dog = function () {
+            console.log('这个一个普通函数');
+        }
+
+        // 普通调用
+        Dog();
+
+        // alloc init ----> new
+        var dog1 = new Dog();
+        var dog2 = new Dog();
+        console.log(dog1, dog2);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

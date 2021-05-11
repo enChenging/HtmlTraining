@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常用的属性</title>
+    <style>
+        div{
+           /*background-color: red;*/
+
+            /*默认是平铺 */
+            /*background: blue; no-repeat 不平铺*/
+            background: url("img/img_01.jpg") ;
+
+            background-size: cover;
+
+
+           width: 80%;
+           height: 500px;
+           /*属性规定元素是否可见*/
+           /*visibility: hidden;*/
+            /*display: none;*/
+           /*规定要显示的光标的类型（形状）*/
+            cursor: help;
+
+            font-family: "sans-serif";
+
+            font-weight: bolder;
+        }
+
+        p#main{
+            background-color: blue;
+            color: white;
+            /*添加到文本的修饰 line-through*/
+            text-decoration: underline;
+        }
+
+        p.test1{
+            /*首行缩进*/
+            text-indent: 30px;
+
+            height: 50px;
+            background-color: yellowgreen;
+
+            /*处理超出的内容  hidden*/
+            overflow: auto;
+        }
+
+        p.test2{
+            text-indent: 7%;
+        }
+
+        a{
+            /*去除下划线*/
+            text-decoration: none;
+        }
+
+        ul{
+            /*square circle  */
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div>我是div</div>
+    <p id="main">我是段落标签</p>
+    <p class="test1">我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落落我是段落</p>
+    <p class="test2">我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落</p>
+    <p>我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落我是段落</p>
+
+    <a href="#">我是超链接</a>
+
+
+    <ul>
+        <li>我是列表</li>
+        <li>我是列表</li>
+        <li>我是列表</li>
+        <li>我是列表</li>
+        <li>我是列表</li>
+    </ul>
+</body>
+</html>

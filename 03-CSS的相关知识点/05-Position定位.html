@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Position定位</title>
+    <!--子绝父相-->
+    <style>
+        *{
+            margin:0;
+        }
+        div.test1{
+           background-color: red;
+           height: 50px;
+            /*相对浏览器进行定位*/
+           position: fixed;
+           bottom:0;
+           width: 100%;
+
+        }
+
+        div.test2{
+            margin:100px;
+            width: 200px;
+            height: 150px;
+            background-color: greenyellow;
+
+            position: relative;
+        }
+
+        div.test3{
+            width: 100px;
+            height: 40px;
+            background-color: purple;
+
+            position: absolute;
+            /*top: 20px;*/
+            left: 0;
+            bottom:0;
+        }
+    </style>
+</head>
+<body>
+   <div class="test1">定位到浏览器的尾部</div>
+
+   <div class="test2">
+       <div class="test3">212121</div>
+   </div>
+</body>
+</html>

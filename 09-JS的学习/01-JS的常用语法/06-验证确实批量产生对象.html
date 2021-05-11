@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // 创建构造函数 ---> 抽象
+        var Dog = function () {
+            this.name = null;
+            this.age = null;
+            this.dogFriends = [];
+            this.height = null;
+            this.eat = function (someThing) {
+                console.log(this.name + '吃' + someThing)
+            };
+            this.run = function (someWhere) {
+                console.log(this.name + '跑' + someWhere)
+            }
+        }
+
+        // 批量产生对象
+        var dog1 = new Dog();
+        dog1.name = '安黄';
+        dog1.age = 15;
+        dog1.dogFriends = ['21', '3232'];
+
+
+        var dog2 = new Dog();
+        dog2.name = '旺财';
+        dog2.age = 1;
+
+
+        console.log(dog1, dog2);
+
+
+        // 创建构造函数 ---> 抽象
+        var Dog1 = function (name, age, dogFriends, height) {
+            this.name = name;
+            this.age = age;
+            this.dogFriends = dogFriends;
+            this.height = height;
+            this.eat = function (someThing) {
+                console.log(this.name + '吃' + someThing)
+            };
+            this.run = function (someWhere) {
+                console.log(this.name + '跑' + someWhere)
+            }
+        };
+
+        var dog3 = new Dog1('安黄', 10, ['wq'], 1.55);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

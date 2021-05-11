@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS中常见的事件</title>
+</head>
+<body>
+    <img src="image/img_01.jpg">
+    <input>
+    <script>
+        // 拿到img标签
+        var img = document.getElementsByTagName('img')[0];
+        var input = document.getElementsByTagName('input')[0];
+
+        //当页面加载完毕
+        window.onload = function () {
+//            alert('页面加载完毕');
+
+           // 鼠标进入图片
+           img.onmouseover = function () {
+              console.log('进入图片');
+           }
+
+            // 鼠标在图片上移动
+            img.onmousemove = function () {
+                console.log('在图片上移动');
+            }
+
+            // 鼠标离开图片
+            img.onmouseout = function () {
+                console.log('离开图片');
+            }
+
+            // 当输入框获得焦点
+            input.onfocus = function () {
+                input.style.width = '500px';
+                input.style.height = '60px';
+            }
+        }
+    </script>
+</body>
+</html>

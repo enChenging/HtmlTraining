@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>初识bootstrap</title>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <style>
+        body{
+            margin: 100px;
+        }
+
+        .test1{
+            width: 50%;
+        }
+
+        .test2{
+            background-color: red;
+        }
+
+        .test3{
+            /*width: 200px;*/
+            font-size: 400px;
+            color: orangered;
+        }
+        div{
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div><a href="https://www.bootcss.com/">Bootstrap中文网连接</a></div>
+    <button class="btn btn-success test1">百度一下,你就知道</button>
+    <button class="btn btn-danger">谷歌一下,你就知道</button>
+    <button class="btn btn-warning">搜狗一下,你就知道</button>
+
+   <p></p>
+   <!--进度条-->
+    <div class="progress">
+        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+            <span class="sr-only">60% Complete (warning)</span>
+        </div>
+    </div>
+
+
+    <!--带动画的-->
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+            <span class="sr-only">45% Complete</span>
+        </div>
+    </div>
+
+   <!--徽章-->
+   <span class="badge test2">35</span>
+
+   <!--字体图标-->
+   <span class="glyphicon glyphicon-film test3"></span>
+   <span class="glyphicon glyphicon-trash test3"></span>
+</body>
+</html>

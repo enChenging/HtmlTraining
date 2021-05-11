@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上下切换图片</title>
+</head>
+<body>
+   <img name="icon" src="image/icon_01.png">
+   <p></p>
+   <button>上一张</button>
+   <button>下一张</button>
+
+   <script>
+       // 1.全局的变量
+       var maxIndex = 9;
+       var minIndex = 1;
+       var currentIndex = minIndex;
+
+       // 2.拿到要操作的标签
+       var img = document.getElementsByName('icon')[0];
+       var pre = document.getElementsByTagName('button')[0];
+       var next = document.getElementsByTagName('button')[1];
+       
+       // 3.监听按钮的点击
+       // 3.1 上一张
+       pre.onclick = function () {
+           if (currentIndex == minIndex){ // 边界处理
+               currentIndex = maxIndex;
+           }else{ // 正常情况
+               currentIndex -=1;
+           }
+
+           // 改变src
+           img.src = 'image/icon_0' + currentIndex + '.png';
+           console.log(img.src);
+       };
+
+       // 3.2 下一张
+       next.onclick = function () {
+          if (currentIndex == maxIndex){ // 边界处理
+              currentIndex = minIndex;
+          }else{ // 正常情况
+              currentIndex +=1;
+          }
+
+           // 改变src
+           img.src = 'image/icon_0'+currentIndex+'.png';
+           console.log(img.src);
+       }
+   </script>
+</body>
+</html>
