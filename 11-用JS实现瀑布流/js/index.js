@@ -94,9 +94,9 @@ function isLoadBox(){
    // 求出浏览器的高度
     var screenHeight = document.body.clientHeight || document.documentElement.clientHeight;
    // 求出页面偏离浏览器的高度
-    var offSetTop = document.body.scrollTop;
+    var offSetTop = document.documentElement.scrollTop;
 
-    console.log(lastBoxDis,screenHeight,offSetTop);
+    console.log('88',lastBoxDis,screenHeight,offSetTop);
    // 判断是否具备加载条件
     return lastBoxDis < screenHeight + offSetTop ? true : false;
 }
