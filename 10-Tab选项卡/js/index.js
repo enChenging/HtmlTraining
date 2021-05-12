@@ -1,6 +1,3 @@
-/**
- * Created by xiaomage on 16/5/9.
- */
 
 function $(id) {
     // 类型的比较
